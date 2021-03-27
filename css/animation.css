@@ -1,0 +1,15 @@
+.StartSideIn{
+    animation: SlideIn 1s;
+}
+  
+@keyframes StartSlideIn {
+    0% {
+      transform: translateX(-64px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+  
