@@ -1,15 +1,7 @@
-.StartSideIn{
-    animation: SlideIn 1s;
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
 }
-  
-@keyframes StartSlideIn {
-    0% {
-      transform: translateX(-64px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-}
-  
