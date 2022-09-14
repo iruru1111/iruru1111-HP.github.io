@@ -1,0 +1,28 @@
+/*-----selector-----*/
+
+/*iruru1111カラーを定義*/
+#iruru-color {
+  color : 00ffff;
+}
+
+/*-----class-----*/
+
+/*center*/
+.center {
+  text-align: center;
+}
+
+/*right*/
+.right {
+  text-align: right;
+}
+
+/*left*/
+.left {
+  text-align: left;
+}
+
+/* 画像サイズをany%で画像を表示 */
+.image-auto {
+    width: 98vw;
+}
