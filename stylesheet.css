@@ -22,7 +22,51 @@
   text-align: left;
 }
 
-/* 画像サイズをany%で画像を表示 */
+/* 画像サイズを自動調節して画像を表示 */
 .image-auto {
-    width: 98vw;
+    max-width: 100%;
+    height: auto;
+}
+
+/*-----copy-----*/
+
+/*========= 上部固定させるためのCSS ===============*/
+#header{
+	height: 70px;/*高さ指定*/
+	max-width:100%;/*横幅指定*/
+	/*以下はレイアウトのためのCSS*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background:#333;
+	color:#fff;
+	text-align: center;
+	padding: 20px;
+}
+
+/*JSを使いfixedクラスが付与された際の設定*/
+#header.fixed{
+	position: fixed;/*fixedを設定して固定*/
+  width: 98%;/*横幅再指定*/
+  z-index: 999;/*最前面へ*/
+  top:0;/*位置指定*/
+  left:0;/*位置指定*/
+}
+
+
+/*========= 以下は検証用のレイアウトのためのCSS ===============*/
+nav ul{
+list-style: none;
+display: flex;
+justify-content: center;
+}
+
+nav ul li a{
+text-decoration: none;
+color: #666;/*ヘッダーボタンの色指定*/
+padding:10px;/*ヘッダーボタンの間隔指定*/
+}
+
+section{
+padding:0px 0;/*謎の空白、俺にはわからなかった*/
 }
